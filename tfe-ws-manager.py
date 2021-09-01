@@ -41,11 +41,11 @@ else:
 
 # set the URL
 if args.url:
-    URL = args.token
+    URL = args.url
 elif environ.get("TFE_URL"):
     URL = environ["TFE_URL"]
 else:
-    print("You need to provide a URL via an environment variable or the --token argument")
+    print("You need to provide a URL via an environment variable or the --url argument")
     exit(1)
 
 # API_URL = f"{URL}/api/v2"
